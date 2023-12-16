@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}body{
+    background-color: black;
+}
+
+.main {
+  height: 100vh;
+
+  position: relative;
+  background-image: url(assets/images/bg.jpg);
+}
+.main .box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  opacity: 0.64;
+  position: absolute;
+  background-color: #000;
+}
+
+nav {
+  max-width: 80vw;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+nav img {
+  margin-top: 20px;
+  height: 35px;
+  z-index: 10;
+  position: relative;
+}
+nav .btn{
+    border-radius: 3px;
+    color: white;
+    z-index: 10;
+    border: 1px solid  rgb(187, 183, 183);
+    background: none;
+}
+nav button {
+  height: 35px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+#b2 {
+    border: 1px solid  rgb(147, 145, 145);
+ 
+    color: white;
+    z-index: 10;
+    border-radius: 3px;
+    background-color: red;
+}
+
+.center {
+  z-index: 10;
+  height: 90vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center h1 {
+    font-size: 55px;
+  font-weight: bold;
+}
+.center span {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.email{
+  display: flex;
+    padding-top: 35px;
+}
+.email button {
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+}
+.email input {
+  color: white;
+
+  background-color: rgb(23, 23, 23, 0.4);
+  padding-left: 10px;
+  border-radius: 5px;
+  height: 40px;
+  text-align: left;
+  width: 300px;
+}
+.sepration {
+  height: 5px;
+  background-color: gray;
+}
+
+.main2 {
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+
+  justify-content: space-around;
+}
+.first {
+    background-color: black;
+    color: white;
+    max-width: 70vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.first .content1 .id1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    
+}
+.first .content1 .id2 {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    
+}
+
+
+
+.secimg {
+    position: relative;
+}
+.secimg img{
+    width: 555px;
+position: relative;
+z-index: 10;
+}
+.secimg video{
+
+position: absolute;
+
+top: 51px;
+right: 0;
+}
+
+
+
+#pic{
+    width: 20px;
+    background-color: red;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center ;
+    padding: 34px;
+}
+.faq h1{
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+.faq .box svg{
+    filter:  invert(1);
+}
+ .faq .box:hover {
+    background-color: rgb(81, 78, 78);
+}
+.faq .box{
+    transition: all 1s ease-in-out;
+     justify-content: space-between;
+background-color: #2d2d2d;
+display: flex;
+padding: 20px;
+max-width: 62vw;
+margin: 8px auto;
+cursor: pointer;
+font-size: 20px;
+font-weight: 200;
+}
+ .faq h3{
+    padding-top: 35px;
+    font-size: 25px;
+font-weight: 100;
+}
+
+footer{
+    color: white;
+    margin: auto;
+
+    padding: 8px;
+    max-width: 60vw;
+}
+
+.footer a{
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+}
+.footer{
+    color: white;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+}
+.footer-item{
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+
+}
+@media screen and (max-width:1000px){
+  .first{
+flex-wrap: wrap;
+
+  }
+  .center h1{
+    text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.center span {
+  text-align: center;
+
+  font-size: 1.125;
+  font-weight: 300;
+}
+
+
+.first{
+  padding: 3.5rem 0;
+}
+.email{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first .content1 .id1 {
+  font-weight: 700;
+  font-size: 2rem;
+
+  
+}
+.first .content1 .id2 {
+  margin: 1rem 0 0;
+  font-size: 1;
+ 
+}
+
+.secimg img{
+  width: 400px;
+
+z-index: 10;
+}
+.secimg video {
+  position: absolute;
+  width: 291px;
+  top: 60px;
+  right: 56px;
+}
+
+.footer{
+
+  display: grid;
+  grid-template-columns:   1fr 1fr ;
+}
+.email button {
+  margin: 1rem;}
+
+}
